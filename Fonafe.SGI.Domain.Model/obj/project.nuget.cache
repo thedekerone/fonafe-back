@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "rvOM6/u9ua4wLAqTwDVtjHlnn+CiD5xqt/ntCO7sIVuP3KdbTE4/IPNfuZLdfkl6jWFUatdJAJPuBnKu0cdD/w==",
+  "success": true,
+  "projectFilePath": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Domain.Model\\Fonafe.SGI.Domain.Model.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\ASUS\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

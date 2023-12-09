@@ -1,0 +1,457 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.WebApi\\Fonafe.SGI.WebApi.csproj": {}
+  },
+  "projects": {
+    "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Common.Model\\Fonafe.SGI.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Common.Model\\Fonafe.SGI.Common.csproj",
+        "projectName": "Fonafe.SGI.Common",
+        "projectPath": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Common.Model\\Fonafe.SGI.Common.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Common.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Domain.Model\\Fonafe.SGI.Domain.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Domain.Model\\Fonafe.SGI.Domain.Model.csproj",
+        "projectName": "Fonafe.SGI.Domain.Model",
+        "projectPath": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Domain.Model\\Fonafe.SGI.Domain.Model.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Domain.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Infraestructura.Const\\Fonafe.SGI.Domain.Repository.Const.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Infraestructura.Const\\Fonafe.SGI.Domain.Repository.Const.csproj",
+        "projectName": "Fonafe.SGI.Domain.Repository.Const",
+        "projectPath": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Infraestructura.Const\\Fonafe.SGI.Domain.Repository.Const.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Infraestructura.Const\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Infraestructura.Repository\\Fonafe.SGI.Domain.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Infraestructura.Repository\\Fonafe.SGI.Domain.Repository.csproj",
+        "projectName": "Fonafe.SGI.Domain.Repository",
+        "projectPath": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Infraestructura.Repository\\Fonafe.SGI.Domain.Repository.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Infraestructura.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Domain.Model\\Fonafe.SGI.Domain.Model.csproj": {
+                "projectPath": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Domain.Model\\Fonafe.SGI.Domain.Model.csproj"
+              },
+              "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Infraestructura.Const\\Fonafe.SGI.Domain.Repository.Const.csproj": {
+                "projectPath": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Infraestructura.Const\\Fonafe.SGI.Domain.Repository.Const.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Google.Cloud.BigQuery.V2": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Infraestructura.Service\\Fonafe.SGI.Domain.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Infraestructura.Service\\Fonafe.SGI.Domain.Service.csproj",
+        "projectName": "Fonafe.SGI.Domain.Service",
+        "projectPath": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Infraestructura.Service\\Fonafe.SGI.Domain.Service.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Infraestructura.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Common.Model\\Fonafe.SGI.Common.csproj": {
+                "projectPath": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Common.Model\\Fonafe.SGI.Common.csproj"
+              },
+              "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Infraestructura.Repository\\Fonafe.SGI.Domain.Repository.csproj": {
+                "projectPath": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Infraestructura.Repository\\Fonafe.SGI.Domain.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "ServiceStack.Common": {
+              "target": "Package",
+              "version": "[6.11.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.WebApi\\Fonafe.SGI.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.WebApi\\Fonafe.SGI.WebApi.csproj",
+        "projectName": "Fonafe.SGI.WebApi",
+        "projectPath": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.WebApi\\Fonafe.SGI.WebApi.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.WebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Infraestructura.Service\\Fonafe.SGI.Domain.Service.csproj": {
+                "projectPath": "D:\\ACSOFT\\back\\back-obs-digital\\Fonafe.SGI\\Fonafe.SGI.Infraestructura.Service\\Fonafe.SGI.Domain.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.10.13, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
