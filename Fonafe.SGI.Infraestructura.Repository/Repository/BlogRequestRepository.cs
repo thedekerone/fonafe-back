@@ -24,10 +24,17 @@ namespace Fonafe.SGI.Domain.Repository.Repository
 
         public async Task<IList<BlogPost>> ListBlog()
         {
-            var posts = await _firebaseClient
+            var firebaseObjects = await _firebaseClient
                 .Child("BlogPosts")
                 .OnceAsync<BlogPost>();
-            return (IList<BlogPost>)posts;
+
+            var posts = new List<BlogPost>();
+            foreach (var firebaseObject in firebaseObjects)
+            {
+                posts.Add(firebaseObject.Object);
+            }
+
+            return posts;
         }
 
         public async Task AddBlogPost(BlogPost blogPost)
@@ -47,7 +54,6 @@ namespace Fonafe.SGI.Domain.Repository.Repository
                     .Child("BlogPosts")
                     .Child(generatedId)
                     .PutAsync(blogPost);
-
             }
         }
 

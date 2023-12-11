@@ -42,6 +42,7 @@ namespace Fonafe.SGI.Domain.Service.Service.BlogService
             {
                 await _iblogRequestRepository.AddBlogPost(blogPost);
                 resultadoProceso.Result = blogPost;
+                resultadoProceso.IsSuccess = true;
             }
             catch (Exception ex)
             {
