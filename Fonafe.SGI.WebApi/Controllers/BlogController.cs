@@ -62,35 +62,35 @@ namespace Fonafe.SGI.WebApi.Controllers
             }
         }
 
-        //// PUT: api/Blog/{id}
-        //[HttpPut("{id}")]
-        //public async Task<IActionResult> UpdatePost(string id, [FromBody] BlogPost blogPost)
-        //{
-        //    blogPost.Id = id;
-        //    var result = await _blogRequestService.UpdateBlogPost(blogPost);
-        //    if (result.IsSuccess)
-        //    {
-        //        return Ok(result.Result);
-        //    }
-        //    else
-        //    {
-        //        return BadRequest(result.Exception);
-        //    }
-        //}
+        // PUT: api/Blog/{id}
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdatePost(string id, [FromBody] BlogPost blogPost)
+        {
+            blogPost.Id = id;
+            var result = await _blogRequestService.UpdateBlogPost(blogPost);
+            if (result == true)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return BadRequest(result);
+            }
+        }
 
-        //// DELETE: api/Blog/{id}
-        //[HttpDelete("{id}")]
-        //public async Task<IActionResult> DeletePost(string id)
-        //{
-        //    var result = await _blogRequestService.DeleteBlogPost(id);
-        //    if (result.IsSuccess)
-        //    {
-        //        return Ok(result.Result);
-        //    }
-        //    else
-        //    {
-        //        return BadRequest(result.Exception);
-        //    }
-        //}
+        // DELETE: api/Blog/{id}
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeletePost(string id)
+        {
+            var result = await _blogRequestService.DeleteBlogPost(id);
+            if (result == true)
+            {
+                return Ok(result);
+            }
+            else
+            {
+                return BadRequest(result);
+            }
+        }
     }
 }

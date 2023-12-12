@@ -54,7 +54,6 @@ namespace Fonafe.SGI.Domain.Repository.Repository
                     .Child("BlogPosts")
                     .Child(generatedId)
                     .PutAsync(blogPost);
-
             }
         }
 
