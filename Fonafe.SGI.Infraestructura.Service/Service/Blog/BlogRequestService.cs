@@ -68,36 +68,41 @@ namespace Fonafe.SGI.Domain.Service.Service.BlogService
             return resultadoProceso;
         }
 
-        //public async Task<ProcessResult<bool>> UpdateBlogPost(BlogPost blogPost)
-        //{
-        //    var resultadoProceso = new ProcessResult<bool>();
-        //    try
-        //    {
-        //        await _iblogRequestRepository.UpdateBlogPost(blogPost);
-        //        resultadoProceso.Result = true;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        resultadoProceso.IsSuccess = false;
-        //        resultadoProceso.Exception = new ApplicationLayerException<BlogRequestService>(ex);
-        //    }
-        //    return resultadoProceso;
-        //}
+        public async Task<bool> UpdateBlogPost(BlogPost blogPost)
+        {
+            var resultadoProceso = new ProcessResult<BlogPost>();
+            var condicional = false;
+            try
+            {
+                await _iblogRequestRepository.UpdateBlogPost(blogPost);
+                //resultadoProceso.Result = true;
+                condicional = true;
+            }
+            catch (Exception ex)
+            {
+                resultadoProceso.IsSuccess = false;
+                condicional = false;
+                resultadoProceso.Exception = new ApplicationLayerException<BlogRequestService>(ex);
+            }
+            return condicional;
+        }
 
-        //public async Task<ProcessResult<bool>> DeleteBlogPost(string id)
-        //{
-        //    var resultadoProceso = new ProcessResult<bool>();
-        //    try
-        //    {
-        //        await _iblogRequestRepository.DeleteBlogPost(id);
-        //        resultadoProceso.Result = true;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        resultadoProceso.IsSuccess = false;
-        //        resultadoProceso.Exception = new ApplicationLayerException<BlogRequestService>(ex);
-        //    }
-        //    return resultadoProceso;
-        //}
+        public async Task<bool> DeleteBlogPost(string id)
+        {
+            var resultadoProceso = new ProcessResult<BlogPost>();
+            var condicional = false;
+            try
+            {
+                await _iblogRequestRepository.DeleteBlogPost(id);
+                condicional = true;
+            } catch(Exception ex)
+            {
+                resultadoProceso.IsSuccess=false;
+                condicional = false;
+                resultadoProceso.Exception = new ApplicationLayerException<BlogRequestService>(ex);
+            }
+            return condicional;
+        }
+
     }
 }
