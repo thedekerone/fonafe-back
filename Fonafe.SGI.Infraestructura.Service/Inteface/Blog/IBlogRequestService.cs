@@ -13,5 +13,6 @@ namespace Fonafe.SGI.Domain.Service.Inteface.Blog
         Task<ProcessResult<BlogPost>> GetBlogPostById(string id);
         Task<bool> UpdateBlogPost(BlogPost blogPost);
         Task<bool> DeleteBlogPost(string id);
+        Task<ProcessResult<List<BlogPost>>> SearchBlogPosts(string searchInput);
     }
 }

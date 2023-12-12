@@ -47,6 +47,7 @@ namespace Fonafe.SGI.WebApi.Controllers
             }
         }
 
+
         // POST: api/Blog
         [HttpPost]
         public async Task<IActionResult> CreatePost([FromBody] BlogPost blogPost)
@@ -90,6 +91,20 @@ namespace Fonafe.SGI.WebApi.Controllers
             else
             {
                 return BadRequest(result);
+            }
+        }
+
+        [HttpGet("search")]
+        public async Task<IActionResult> SearchPosts(string searchInput)
+        {
+            var result = await _blogRequestService.SearchBlogPosts(searchInput);
+            if (result.IsSuccess)
+            {
+                return Ok(result.Result);
+            }
+            else
+            {
+                return BadRequest(result.Exception);
             }
         }
     }
