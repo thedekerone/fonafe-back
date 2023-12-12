@@ -14,5 +14,6 @@ namespace Fonafe.SGI.Domain.Repository.Interface
         Task<BlogPost> GetBlogPostById(string id);
         Task UpdateBlogPost(BlogPost blogPost);
         Task DeleteBlogPost(string id);
+        Task<IList<BlogPost>> SearchBlogPosts(string searchInput);
     }
 }

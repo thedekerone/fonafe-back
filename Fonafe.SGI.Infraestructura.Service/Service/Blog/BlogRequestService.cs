@@ -104,5 +104,22 @@ namespace Fonafe.SGI.Domain.Service.Service.BlogService
             return condicional;
         }
 
+
+        public async Task<ProcessResult<List<BlogPost>>> SearchBlogPosts(string searchInput)
+        {
+            var resultadoProceso = new ProcessResult<List<BlogPost>>();
+            try
+            {
+                var posts = await _iblogRequestRepository.SearchBlogPosts(searchInput);
+                resultadoProceso.Result = (List<BlogPost>)posts;
+                resultadoProceso.IsSuccess = true;
+            }
+            catch (Exception ex)
+            {
+                resultadoProceso.IsSuccess = false;
+                resultadoProceso.Exception = new ApplicationLayerException<BlogRequestService>(ex);
+            }
+            return resultadoProceso;
+        }
     }
 }
