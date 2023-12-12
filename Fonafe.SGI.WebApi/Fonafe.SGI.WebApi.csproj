@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+  <TargetFramework>net8.0</TargetFramework>
     <UserSecretsId>39bd2161-1cdd-4f85-9699-88fd2dd4cd56</UserSecretsId>
     <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
   </PropertyGroup>

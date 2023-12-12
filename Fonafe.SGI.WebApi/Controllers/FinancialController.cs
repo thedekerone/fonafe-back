@@ -17,7 +17,7 @@ using System.Threading.Tasks;
 namespace Fonafe.SGI.WebApi.Controllers
 {
     [Route("api/[controller]")]
-   // [EnableCors("CORS")]
+    //[EnableCors("CORS")]
     [ApiController]
     public class FinancialController : ControllerBase
     {

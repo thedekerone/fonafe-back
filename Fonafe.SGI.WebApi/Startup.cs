@@ -32,7 +32,13 @@ namespace Fonafe.SGI.WebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+     services.AddCors(options =>
+        {
+            options.AddPolicy("AllowSpecificOrigin",
+                builder => builder.WithOrigins("http://localhost:4200") // Replace with the Angular app's URL
+                                  .AllowAnyHeader()
+                                  .AllowAnyMethod());
+        });
             services.AddControllers();
 
             // Registra IBlogRequestRepository y su implementación concreta.
@@ -55,11 +61,13 @@ namespace Fonafe.SGI.WebApi
         {
             if (env.IsDevelopment())
             {
+                app.UseCors("AllowSpecificOrigin");
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Fonafe.SGI.WebApi v1"));
             }
 
+        app.UseCors("AllowSpecificOrigin");
             app.UseHttpsRedirection();
 
             app.UseRouting();
