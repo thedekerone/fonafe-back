@@ -24,10 +24,17 @@ namespace Fonafe.SGI.Domain.Repository.Repository
 
         public async Task<IList<BlogPost>> ListBlog()
         {
-            var posts = await _firebaseClient
+            var firebaseObjects = await _firebaseClient
                 .Child("BlogPosts")
                 .OnceAsync<BlogPost>();
-            return (IList<BlogPost>)posts;
+
+            var posts = new List<BlogPost>();
+            foreach (var firebaseObject in firebaseObjects)
+            {
+                posts.Add(firebaseObject.Object);
+            }
+
+            return posts;
         }
 
         public async Task AddBlogPost(BlogPost blogPost)
@@ -51,15 +58,25 @@ namespace Fonafe.SGI.Domain.Repository.Repository
             }
         }
 
+
         public async Task<BlogPost> GetBlogPostById(string id)
         {
-            var post = await _firebaseClient
-                .Child("BlogPosts")
-                .Child(id)
-                .OnceSingleAsync<BlogPost>();
-            return post;
-        }
+            try
+            {
+                var post = await _firebaseClient
+                    .Child("BlogPosts")
+                    .Child(id)
+                    .OnceSingleAsync<BlogPost>();
 
+                return post;
+            }
+            catch (Exception ex)
+            {
+                // Handle the exception (log it, return null, or throw a custom exception)
+                Console.WriteLine($"Error fetching blog post: {ex.Message}");
+                return null;
+            }
+        }
         public async Task UpdateBlogPost(BlogPost blogPost)
         {
             await _firebaseClient
