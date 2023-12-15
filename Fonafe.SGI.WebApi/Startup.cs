@@ -35,7 +35,7 @@ namespace Fonafe.SGI.WebApi
      services.AddCors(options =>
         {
             options.AddPolicy("AllowSpecificOrigin",
-                builder => builder.WithOrigins("http://localhost:4200") // Replace with the Angular app's URL
+                builder => builder.WithOrigins("*")
                                   .AllowAnyHeader()
                                   .AllowAnyMethod());
         });
@@ -61,7 +61,6 @@ namespace Fonafe.SGI.WebApi
         {
             if (env.IsDevelopment())
             {
-                app.UseCors("AllowSpecificOrigin");
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Fonafe.SGI.WebApi v1"));
